@@ -1,0 +1,45 @@
+package com.training.sdetday6;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import junit.framework.Assert;
+
+public class C_17_4a_Junit {
+	
+	String baseUrl;
+	WebDriver driver;
+
+	@Before
+	public void setup() 
+	{
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		baseUrl = "http://www.facebook.com/";
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
+	}
+	
+    @SuppressWarnings("deprecation")
+	@Test
+	public void testVerifyHomePage() throws Exception {
+		driver.get(baseUrl + "/");
+		String actualPageTitle = driver.getTitle();
+		String pageTitle = "Facebook - Log In or sign Up";
+		Assert.assertEquals(pageTitle, actualPageTitle);
+		
+		
+	}
+	
+	@After 
+	public void tearDown(){
+		driver.quit();
+	}
+}

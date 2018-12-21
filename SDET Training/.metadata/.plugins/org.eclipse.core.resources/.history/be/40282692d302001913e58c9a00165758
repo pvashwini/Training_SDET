@@ -1,0 +1,36 @@
+package com.training.sdetday7;
+
+import java.util.LinkedList;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+
+@RunWith(Parameterized.class)
+public class Junit5Test {
+
+	private String platform;
+	private String browser;
+	private String AUT;
+	
+	@Parameterized.Parameters
+	public static LinkedList<String[]> getEnvironments() throws Exception {
+		LinkedList<String[]> env = new LinkedList<String[]>();
+		env.add(new String[] { Platform.WINDOWS.toString(),"ie","http://www.amazon.com"});
+		env.add(new String[] { Platform.WINDOWS.toString(),"ie","http://www.facebook.com"});
+		env.add(new String[] { Platform.WINDOWS.toString(),"chrome","http://www.fannie.com"});
+		env.add(new String[] { Platform.WINDOWS.toString(),"chrome","http://www.sdettraining.com"});
+		
+		return env;
+	}
+	
+	
+}

@@ -1,0 +1,42 @@
+package CucumberLearning.CucumberLearning;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.internal.junit.ArrayAsserts;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class VerifyTitle_StepDefinitions {
+	WebDriver driver;
+	String actualTitle;
+
+	@Given("^User is on the landing page$")
+	public void user_is_on_the_landing_page() throws Throwable {
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
+		String AUT = "http://facebook.com/";
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(AUT);
+
+	}
+
+	@When("^User checks the title$")
+	public void user_checks_the_title() throws Throwable {
+		actualTitle = driver.getTitle();
+		System.out.println(actualTitle);
+
+	}
+	
+	@Then("^it must say \"([^\"]*)\"$")
+	public void it_must_say(String expectedString) throws Throwable {
+	 Assert.assertEquals(actualTitle,expectedString);
+	 driver.quit();
+	}
+
+}

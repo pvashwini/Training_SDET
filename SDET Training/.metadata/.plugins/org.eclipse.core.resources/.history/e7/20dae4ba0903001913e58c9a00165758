@@ -1,0 +1,13 @@
+package com.training.sdetday7;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class useDataFromTestNG {
+
+	String Pet;
+	
+	@BeforeClass
+	@org.testng.annotations.Parameters(value={"pet","browser","version","platform"})
+	
+}

@@ -1,0 +1,8 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+public class OrderConfirmation {
+
+	public void orderConfirmMessage(){
+		System.out.println("Implement Capture order confir message functionality");
+	}
+}

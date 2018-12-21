@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34882" started-at="2018-12-21T17:45:22Z" finished-at="2018-12-21T17:45:57Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberLearning.CucumberLearning.TestRunner@4dfa3a9d]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="34882" started-at="2018-12-21T17:45:22Z" finished-at="2018-12-21T17:45:57Z">
+      <class name="CucumberLearning.CucumberLearning.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:CucumberLearning.CucumberLearning.TestRunner@4dfa3a9d]" name="setUpClass" is-config="true" duration-ms="295" started-at="2018-12-21T17:45:22Z" finished-at="2018-12-21T17:45:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:CucumberLearning.CucumberLearning.TestRunner@4dfa3a9d]" name="feature" duration-ms="34438" started-at="2018-12-21T17:45:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-21T17:45:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DDT Testing of the Login Functionality of the application with Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:CucumberLearning.CucumberLearning.TestRunner@4dfa3a9d]" name="tearDownClass" is-config="true" duration-ms="23" started-at="2018-12-21T17:45:56Z" finished-at="2018-12-21T17:45:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberLearning.CucumberLearning.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

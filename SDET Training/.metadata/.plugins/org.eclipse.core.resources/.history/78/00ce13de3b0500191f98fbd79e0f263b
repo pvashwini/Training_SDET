@@ -1,0 +1,26 @@
+package CucumberLearning.CucumberLearning;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class VerifyTitle_StepDefinitions {
+
+	@Given("^User is on the landing page$")
+	public void user_is_on_the_landing_page() throws Throwable {
+		
+		
+
+	}
+
+	@When("^User checks the title$")
+	public void user_checks_the_title() throws Throwable {
+
+	}
+
+	@Then("^it must say Facebook login successful$")
+	public void it_must_say_Facebook_login_successful() throws Throwable {
+
+	}
+
+}

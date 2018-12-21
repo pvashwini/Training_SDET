@@ -1,0 +1,8 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+public class Search {
+
+	public void searchItem() {
+		System.out.println("Implement search functionality here");
+	}
+}

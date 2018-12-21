@@ -1,0 +1,11 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+public class CheckOut {
+	
+	public void CheckoutCart(){
+		System.out.println("Implement Checkout functionality here");
+		System.out.println("Implement Payment functionality here");
+		System.out.println("Implement Shipping functionality here");
+	}
+
+}

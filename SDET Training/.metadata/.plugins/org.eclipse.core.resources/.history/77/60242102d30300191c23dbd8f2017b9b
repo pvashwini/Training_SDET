@@ -1,0 +1,9 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+public class AddToCart {
+
+	public void AddItemToCart() {
+		System.out.println("Implement search functionality here");
+	}
+
+}

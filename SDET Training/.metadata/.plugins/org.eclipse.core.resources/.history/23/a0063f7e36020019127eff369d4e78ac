@@ -1,0 +1,75 @@
+package com.training.sdetday6;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import junit.framework.Assert;
+
+public class C_17_4a_Junit {
+	
+	String baseUrlfacebook;
+	String baseUrlgmail;
+	String baseUrlYahoo;
+	static WebDriver driver;
+
+	@Before
+	public void setup() 
+	{
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		baseUrlfacebook = "http://www.facebook.com/";
+		baseUrlgmail = "http://www.google.com/";
+		baseUrlYahoo = "http://www.yahoo.com/";
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
+	}
+	
+    @SuppressWarnings("deprecation")
+	@Test
+	public void testVerifyfacebook() throws Exception {
+		driver.get(baseUrlfacebook + "/");
+		String actualPageTitle = driver.getTitle();
+		String pageTitle = "Facebook - Log In or Sign Up";
+		Assert.assertEquals(pageTitle, actualPageTitle);
+		
+		
+	}
+    
+
+ 	@SuppressWarnings("deprecation")
+	@Test
+ 	public void testverifyyahoo() throws Exception {
+ 		driver.get(baseUrlYahoo + "/");
+ 		String actualPageTitle = driver.getTitle();
+ 		String pageTitle = "Yahoo";
+		Assert.assertEquals(pageTitle, actualPageTitle);
+ 		
+ 		
+ 	}
+    
+
+ 	@SuppressWarnings("deprecation")
+	@Ignore @Test
+ 	public void testverifygmail() throws Exception {
+ 		driver.get(baseUrlgmail + "/");
+ 		String actualPageTitle = driver.getTitle();
+ 		String pageTitle = "Google";
+		Assert.assertEquals(pageTitle, actualPageTitle);
+ 		
+ 		
+ 	}
+	
+	@AfterClass
+	public void tearDown(){
+		driver.quit();
+	}
+}

@@ -1,0 +1,33 @@
+package com.training.sdetday6;
+
+import org.junit.Test;
+
+public class TestNGnew {
+
+	@Test
+	void login(){
+		System.out.println("login");
+	}
+	
+	@Test
+	void search(){
+		System.out.println("search");
+	}
+	
+	@Test
+	void addcart(){
+		
+		System.out.println("add to cart");
+		
+	}
+	
+	@Test
+	void payment(){
+		System.out.println("Payment done");
+	}
+	
+	
+	
+	
+	
+}

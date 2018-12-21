@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61932" started-at="2018-12-20T18:37:21Z" finished-at="2018-12-20T18:38:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61932" started-at="2018-12-20T18:37:21Z" finished-at="2018-12-20T18:38:22Z">
+      <class name="FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_WebApp">
+        <test-method status="PASS" signature="tc_verifyTitle()[pri:0, instance:FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_WebApp@1b604f19]" name="tc_verifyTitle" duration-ms="61857" started-at="2018-12-20T18:37:21Z" finished-at="2018-12-20T18:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_verifyTitle -->
+      </class> <!-- FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_WebApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

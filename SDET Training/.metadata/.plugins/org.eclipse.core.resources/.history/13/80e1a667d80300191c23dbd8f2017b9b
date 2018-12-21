@@ -1,0 +1,8 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+public class ModifyCart {
+
+	public void ModifyItemCart() {
+		System.out.println("Implement ModifyItemCart functionality here");
+	}
+}

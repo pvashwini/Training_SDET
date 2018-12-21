@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16019" started-at="2018-12-19T22:04:25Z" finished-at="2018-12-19T22:04:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16019" started-at="2018-12-19T22:04:25Z" finished-at="2018-12-19T22:04:41Z">
+      <class name="POM_FMHerndonSMJ.com.fm.pageobjectmodel.DriverScript">
+        <test-method status="PASS" signature="setup()[pri:0, instance:POM_FMHerndonSMJ.com.fm.pageobjectmodel.DriverScript@29ee9faa]" name="setup" is-config="true" duration-ms="7550" started-at="2018-12-19T22:04:25Z" finished-at="2018-12-19T22:04:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc_End2EndShoppingCart()[pri:0, instance:POM_FMHerndonSMJ.com.fm.pageobjectmodel.DriverScript@29ee9faa]" name="tc_End2EndShoppingCart" duration-ms="8429" started-at="2018-12-19T22:04:33Z" finished-at="2018-12-19T22:04:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_End2EndShoppingCart -->
+      </class> <!-- POM_FMHerndonSMJ.com.fm.pageobjectmodel.DriverScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

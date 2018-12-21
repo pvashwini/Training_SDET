@@ -1,0 +1,131 @@
+com 
+
+      onsite
+           india 
+               salary
+           england 
+               salary
+           tokyo
+               salary
+      offsite
+           chicago 
+               salary
+
+import com.onsite.india.salary;
+
+public
+default(package)
+private
+protected
+
+class Account {
+ 
+
+     private int accId;
+     private String firstName;
+     private String lastName;
+
+//getters and setters
+}
+
+class customer {
+
+     private int custId;
+     private String firstName;
+     private String lastName;
+
+}
+
+class Customer {
+    private int custId;
+    private Name name;
+}
+
+class Employee {
+    private int empId;
+    private String firstName;
+    private String lastName;
+}
+
+changed to 
+
+class Employee {
+    private int empId;
+    private Name name;
+}
+class Name {
+
+     private String firstName;
+     private String lastName;
+
+}
+
+HAS relationship
+
+class Object{}
+class Person extends Object {}
+class Employee extends person {}
+
+class Object{
+ 
+      Object(){  
+
+       //ToDO by Sun Microsystems
+}
+
+//Immutable vs Mutable
+
+class Employee {
+
+        private int empId;
+        private String empName;
+      
+       Employee(int empId, String empName){
+         this.empId = empId;
+         this.empName = empName;
+      }
+
+    Employee(){}
+
+
+Car c = new BMW();
+c.drive();
+c.brake();
+((BMW)c).abs();  //typecast
+
+
+}
+
+class Person extends Object {
+
+   person(){
+     super();
+}
+
+
+
+//converted by compiler
+class Employee extends person {
+      Employee(){
+      super();
+  }
+}
+
+
+class Father{
+
+  public void education(){
+     //commerce
+}
+}
+
+class Me {
+
+    public void education()
+
+
+
+DML - Insert, update, delete (Acknowledgement with int -- No of records affected) 
+DQL - select ( acknowledges with a result set ) 
+
+CRUD - collect, update, delete, 

@@ -1,0 +1,31 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class DriverScript {
+
+	static WebDriver driver;
+	
+	public void setup() {
+
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+
+	@Test
+	public void tc_End2EndShoppingCart() {
+
+		System.out.println("Step 1: Search class/page object will get called");
+		System.out.println("Step 2: AddToCart class/page object will get called");
+		System.out.println("Step 3: ModifyCart class/page object will get called");
+		System.out.println("Step 4: CheckOut class/page object will get called");
+		System.out.println("Step 5: OrderConfirmation class/page object will get called");
+		System.out.println("Step 5: Verify that order has been placed code will get executed");
+	}
+
+	public void tearDown() {
+		System.out.println("Browser will get closed");
+	}
+}

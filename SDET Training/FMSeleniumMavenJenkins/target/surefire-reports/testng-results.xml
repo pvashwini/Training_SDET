@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="68508" started-at="2018-12-19T17:56:18Z" finished-at="2018-12-19T17:57:26Z">
+    <groups>
+    </groups>
+    <test name="TestWebApp" duration-ms="66503" started-at="2018-12-19T17:56:18Z" finished-at="2018-12-19T17:57:24Z">
+      <class name="FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_WebApp">
+        <test-method status="PASS" signature="tc_verifyTitle()[pri:0, instance:FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_WebApp@21bcffb5]" name="tc_verifyTitle" duration-ms="66462" started-at="2018-12-19T17:56:18Z" finished-at="2018-12-19T17:57:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_verifyTitle -->
+      </class> <!-- FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_WebApp -->
+    </test> <!-- TestWebApp -->
+    <test name="TestTestNGDemo" duration-ms="1" started-at="2018-12-19T17:57:26Z" finished-at="2018-12-19T17:57:26Z">
+      <class name="FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_TestNGDemo">
+        <test-method status="PASS" signature="tc_verifyTitle1()[pri:0, instance:FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_TestNGDemo@6be46e8f]" name="tc_verifyTitle1" duration-ms="0" started-at="2018-12-19T17:57:26Z" finished-at="2018-12-19T17:57:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_verifyTitle1 -->
+      </class> <!-- FMSeleniumMavenJenkins.FMSeleniumMavenJenkins.TestCases_TestNGDemo -->
+    </test> <!-- TestTestNGDemo -->
+  </suite> <!-- Suite -->
+</testng-results>

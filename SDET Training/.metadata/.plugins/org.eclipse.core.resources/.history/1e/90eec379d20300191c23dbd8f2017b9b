@@ -1,0 +1,26 @@
+package POM_FMHerndonSMJ.com.fm.pageobjectmodel;
+
+import org.testng.annotations.Test;
+
+public class DriverScript {
+
+	public void setup() {
+
+		System.out.println(" Browser gets prepared here and will navigate to the AUT");
+	}
+
+	@Test
+	public void tc_End2EndShoppingCart() {
+
+		System.out.println("Step 1: Search class/page object will get called");
+		System.out.println("Step 2: AddToCart class/page object will get called");
+		System.out.println("Step 3: ModifyCart class/page object will get called");
+		System.out.println("Step 4: CheckOut class/page object will get called");
+		System.out.println("Step 5: OrderConfirmation class/page object will get called");
+		System.out.println("Step 5: Verify that order has been placed code will get executed");
+	}
+
+	public void tearDown() {
+
+	}
+}

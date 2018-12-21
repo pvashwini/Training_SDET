@@ -1,0 +1,11 @@
+package FMSeleniumMavenJenkins.FMSeleniumMavenJenkins;
+
+import org.testng.annotations.Test;
+
+public class TestCases_WebApp {
+
+	@Test
+	public void tc_verifyTitle(){
+		System.out.println("some code will go execute here");
+	}
+}
